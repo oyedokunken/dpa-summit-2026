@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+
+    <!-- Homepage - Highest Priority -->
+    <url>
+        <loc>https://www.dpa-summit.com/</loc>
+        <lastmod>2026-03-20T12:00:00+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://www.dpa-summit.com/images/dpa-summit-2026-hero.jpg</image:loc>
+            <image:title>Africa Digital Procurement Summit 2026</image:title>
+            <image:caption>Accelerating Procurement Transformation for Large Enterprises in the Digital Era</image:caption>
+        </image:image>
+    </url>
+
+    <!-- Registration Page - High Priority -->
+    <url>
+        <loc>https://www.dpa-summit.com/register</loc>
+        <lastmod>2026-03-20T12:00:00+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Delegates Page -->
+    <url>
+        <loc>https://www.dpa-summit.com/delegates</loc>
+        <lastmod>2026-03-20T12:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Agenda/Program Page -->
+    <url>
+        <loc>https://www.dpa-summit.com/agenda</loc>
+        <lastmod>2026-03-20T12:00:00+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Speakers Page -->
+    <url>
+        <loc>https://www.dpa-summit.com/speakers</loc>
+        <lastmod>2026-03-20T12:00:00+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Sponsors & Partners Page -->
+    <url>
+        <loc>https://www.dpa-summit.com/sponsors</loc>
+        <lastmod>2026-03-20T12:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Media/Press Page -->
+    <url>
+        <loc>https://www.dpa-summit.com/media</loc>
+        <lastmod>2026-03-20T12:00:00+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+        <news:news>
+            <news:publication>
+                <news:name>DPA Summit 2026</news:name>
+                <news:language>en</news:language>
+            </news:publication>
+            <news:publication_date>2026-03-20T12:00:00+00:00</news:publication_date>
+            <news:title>Africa Digital Procurement Summit 2026 Announces Speaker Lineup</news:title>
+        </news:news>
+    </url>
+
+    <!-- FAQ Page -->
+    <url>
+        <loc>https://www.dpa-summit.com/faq</loc>
+        <lastmod>2026-03-20T12:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- Contact Page -->
+    <url>
+        <loc>https://www.dpa-summit.com/contact</loc>
+        <lastmod>2026-03-20T12:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <!-- Event Schema Structured Data Reference -->
+    <!-- This sitemap works with the Event schema markup in the HTML -->
+    <!-- Event: Africa Digital Procurement Summit 2026 -->
+    <!-- Date: May 26, 2026 -->
+    <!-- Location: Eko Hotels and Suites, Victoria Island, Lagos -->
+    <!-- Organizer: Gloopro Procurement Systems -->
+
+</urlset>
