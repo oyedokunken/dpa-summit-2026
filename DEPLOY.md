@@ -439,7 +439,7 @@ aws s3 sync dist/ s3://dpa-summit-2026-prod/ \
 
 For deployment issues, contact:
 
-- **DevOps Team:** devops@gloopro.com
+- **DevOps Team:** <devops@gloopro.com>
 - **AWS Support:** Available through AWS Console
 - **Documentation:** Check project WIKI.md for additional details
 
