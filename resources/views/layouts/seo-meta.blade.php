@@ -169,7 +169,7 @@
                 "position": {{ $index + 1 }},
                 "name": "{{ $breadcrumb['name'] }}",
                 "item": "{{ $breadcrumb['url'] }}"
-            }@if(!$loop->last),@endif
+            }@if(!$loop->last), @endif
             @endforeach
         ]
     }
