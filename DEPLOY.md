@@ -260,10 +260,10 @@ MAIL_PORT=587
 MAIL_USERNAME=your-email@gmail.com
 MAIL_PASSWORD=your-app-password
 MAIL_ENCRYPTION=tls
-MAIL_FROM_ADDRESS=noreply@dpa-summit.com
+MAIL_FROM_ADDRESS=noreply@digitalprocurement.africa
 MAIL_FROM_NAME="DPA Summit 2026"
-MAIL_ADMIN_ADDRESS=admin@dpa-summit.com
-MAIL_INQUIRIES_ADDRESS=partnerships@dpa-summit.com
+MAIL_ADMIN_ADDRESS=admin@digitalprocurement.africa
+MAIL_INQUIRIES_ADDRESS=partnerships@digitalprocurement.africa
 
 # AWS Configuration
 AWS_ACCESS_KEY_ID=your_access_key

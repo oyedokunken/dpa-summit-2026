@@ -106,7 +106,7 @@
         },
         "offers": {
             "@type": "Offer",
-            "url": "https://www.dpa-summit.com/register",
+            "url": "https://digitalprocurement.africa/register",
             "price": "0",
             "priceCurrency": "NGN",
             "availability": "https://schema.org/InStock",
@@ -123,7 +123,7 @@
             "{{ asset('images/dpa-summit-2026-hero.jpg') }}",
             "{{ asset('images/dpa-summit-2026-og.jpg') }}"
         ],
-        "url": "https://www.dpa-summit.com",
+        "url": "https://digitalprocurement.africa",
         "keywords": "digital procurement, Africa, summit, Lagos, procurement transformation, CPO, CFO, enterprise",
         "inLanguage": "en-US",
         "isAccessibleForFree": true

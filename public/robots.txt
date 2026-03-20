@@ -1,5 +1,5 @@
 # DPA Summit 2026 - Robots.txt
-# https://www.dpa-summit.com/robots.txt
+# https://digitalprocurement.africa/robots.txt
 
 User-agent: *
 Allow: /
@@ -41,7 +41,7 @@ Disallow: /api/
 # Allow: /api/agenda
 
 # Sitemap location
-Sitemap: https://www.dpa-summit.com/sitemap.xml
+Sitemap: https://digitalprocurement.africa/sitemap.xml
 
 # Crawl delay (optional - be careful with this)
 # Crawl-delay: 1
