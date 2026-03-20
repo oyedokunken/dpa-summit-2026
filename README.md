@@ -18,14 +18,19 @@ The official digital platform for the **Africa Digital Procurement Summit 2026**
 ## 📋 Table of Contents
 
 - [Project Overview](#-project-overview)
+- [Business Objectives](#-business-objectives)
 - [Key Features](#-key-features)
-- [Site Architecture (The 9 Pages)]#-site-architecture-the-9-pages)
+- [Site Architecture (The 9 Pages)](#-site-architecture-the-9-pages)
+- [Current Implementation Status](#-current-implementation-status)
 - [Tech Stack](#-tech-stack)
 - [Prerequisites](#-prerequisites)
 - [Installation Guide](#-installation-guide)
 - [Project Structure](#-project-structure)
+- [Development Workflow](#-development-workflow)
+- [Testing](#-testing)
 - [Troubleshooting](#-troubleshooting)
 - [Deployment](#-deployment)
+- [Contributing](#-contributing)
 - [Credits & References](#-credits--references)
 
 ---
@@ -35,9 +40,45 @@ The official digital platform for the **Africa Digital Procurement Summit 2026**
 The DPA Summit website is designed as a strategic intervention to drive procurement transformation. It serves as a central hub for event registration, agenda management, and sponsor visibility, while tightly integrating with the Gloopro ecosystem.
 
 ### Business Objectives
-*   **Lead Generation:** Capture high-quality leads from C-Suite executives in Oil & Gas, FMCG, and Manufacturing.
-*   **Brand Authority:** Establish Gloopro as a leader in ERP-integrated procurement solutions.
-*   **Cross-Traffic:** Implement a unique "Dual-Tab" strategy to drive traffic between the Summit site and the Gloopro corporate site.
+
+- **Lead Generation:** Capture high-quality leads from C-Suite executives in Oil & Gas, FMCG, and Manufacturing sectors
+- **Brand Authority:** Establish Gloopro as a leader in ERP-integrated procurement solutions
+- **Cross-Traffic:** Implement a unique "Dual-Tab" strategy to drive traffic between the Summit site and the Gloopro corporate site
+- **Event Management:** Streamline registration, speaker management, and sponsor coordination
+- **Content Marketing:** Provide valuable procurement insights and thought leadership content
+
+---
+
+## 🎯 Current Implementation Status
+
+### ✅ Completed Features
+- **Laravel 13.1** framework setup with PHP 8.3
+- **Tailwind CSS 3.4** configuration with Vite build system
+- **Basic routing** for Home, Delegates, and Agenda pages
+- **Master layout template** with responsive header/footer
+- **Database migrations** for users, cache, and jobs tables
+- **Development environment** configuration (Vite HMR, Laravel serve)
+- **Documentation** (README, WIKI, CHANGELOG)
+
+### 🚧 In Progress
+- **Home page** with hero section and basic styling
+- **Delegates page** placeholder
+- **Agenda page** placeholder
+
+### 📋 Pending Implementation
+- **Registration form** with lead capture functionality
+- **Contact form** with email integration
+- **Speaker profiles** page with dynamic content
+- **Sponsors & Partnerships** page
+- **Media/Press** page
+- **FAQ** page
+- **Dual-Tab traffic strategy** implementation
+- **SEO optimization** with schema markup
+- **Countdown timer** to event date
+- **Mobile responsiveness** optimization
+- **Form validation** and error handling
+- **Database models** for registrants and contacts
+- **Email notifications** for registrations
 
 ---
 
@@ -224,9 +265,61 @@ dpa-summit-2026/
 └── vite.config.js           # Vite configuration
 ```
 
+## 🔄 Development Workflow
+
+### Git Workflow
+```bash
+# Create feature branch
+git checkout -b feature/registration-form
+
+# Make changes and commit
+git add .
+git commit -m "feat: add registration form with validation"
+
+# Push and create PR
+git push origin feature/registration-form
+```
+
+### Code Style
+- **PHP:** Follow PSR-12 standards
+- **Blade:** Use proper indentation and comments
+- **CSS:** Utilize Tailwind utility classes consistently
+- **JS:** Write clean, documented vanilla JavaScript
+
+### Testing Strategy
+```bash
+# Run Laravel tests
+php artisan test
+
+# Run specific test
+php artisan test --filter RegistrationTest
+
+# Generate test coverage report
+php artisan test --coverage
+```
+
 ---
 
-## 🛠 Troubleshooting
+## 🧪 Testing
+
+### Available Tests
+- **Unit Tests:** Model validations and business logic
+- **Feature Tests:** Form submissions and user flows
+- **Browser Tests:** UI interactions with Laravel Dusk
+
+### Running Tests
+```bash
+# Install testing dependencies
+composer require --dev laravel/dusk
+
+# Run all tests
+php artisan test
+
+# Run with coverage
+php artisan test --coverage --min=80
+```
+
+---
 
 ### 1. "View [home] not found"
 *   **Cause:** The `.blade.php` file is in the wrong folder.
@@ -256,7 +349,34 @@ dpa-summit-2026/
 
 ---
 
-## 🚢 Deployment
+## 🤝 Contributing
+
+We welcome contributions! Please follow these guidelines:
+
+### Development Setup
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/amazing-feature`
+3. Make your changes
+4. Run tests: `php artisan test`
+5. Commit changes: `git commit -m 'Add amazing feature'`
+6. Push to branch: `git push origin feature/amazing-feature`
+7. Open a Pull Request
+
+### Code Review Process
+- All code must pass automated tests
+- Maintain PSR-12 coding standards
+- Update documentation for new features
+- Ensure responsive design across devices
+
+### Issue Reporting
+- Use GitHub Issues for bug reports
+- Include steps to reproduce
+- Provide environment details
+- Attach screenshots when applicable
+
+---
+
+## 🛠 Troubleshooting
 
 This project is designed for in-house deployment by the Gloopro tech team.
 
