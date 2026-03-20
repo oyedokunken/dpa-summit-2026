@@ -335,7 +335,7 @@ ACTION REQUIRED: Forward to partnerships team.
                 <h2>Details:</h2>
                 <div class='field'><strong>Name:</strong> " . ($data['full_name'] ?? $data['name']) . "</div>
                 <div class='field'><strong>Email:</strong> {$data['email']}</div>
-                <div class='field'><strong>Company:</strong> {$data['company'] ?? 'Not provided'}</div>
+                <div class='field'><strong>Company:</strong> " . ($data['company'] ?? 'Not provided') . "</div>
                 <div class='field'><strong>Submitted:</strong> " . date('Y-m-d H:i:s') . "</div>
                 <p><strong>Action Required:</strong> Review and follow up as needed.</p>
             </div>

@@ -13,7 +13,7 @@ This guide provides step-by-step instructions for deploying the Africa Digital P
 
 ## 🏗️ Architecture Overview
 
-```
+```text
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
 │   GitHub Repo   │───▶│  AWS S3 Bucket  │───▶│  AWS CloudFront │
 │                 │    │   (Static Site) │    │     (CDN)       │
@@ -438,10 +438,11 @@ aws s3 sync dist/ s3://dpa-summit-2026-prod/ \
 ## 📞 Support
 
 For deployment issues, contact:
+
 - **DevOps Team:** devops@gloopro.com
 - **AWS Support:** Available through AWS Console
 - **Documentation:** Check project WIKI.md for additional details
 
 ---
 
-*Last Updated: March 2026*
+## Last Updated: March 2026
