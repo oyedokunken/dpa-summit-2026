@@ -1,3 +1,7 @@
+# DPA Summit 2026 - SEO & Performance Optimized .htaccess
+# Apache Server Configuration - PowerShell Compatible Version
+
+# Enable URL Rewriting
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
@@ -117,18 +121,85 @@
     Header append Vary User-Agent
 </IfModule>
 
-# File Caching
+# File Caching - COMPLETELY POWERSHELL SAFE VERSION
 <IfModule mod_headers.c>
-    # Cache Control Headers
-    <FilesMatch "\.(css|js|png|jpg|jpeg|gif|webp|svg|ico|woff|woff2|ttf|eot)$">
+    # Cache Control Headers for CSS files
+    <FilesMatch "\.css$">
         Header set Cache-Control "public, max-age=31536000, immutable"
     </FilesMatch>
 
-    <FilesMatch "\.(html|htm)$">
+    # Cache Control Headers for JavaScript files
+    <FilesMatch "\.js$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+
+    # Cache Control Headers for PNG files
+    <FilesMatch "\.png$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+
+    # Cache Control Headers for JPG files
+    <FilesMatch "\.jpg$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+
+    # Cache Control Headers for JPEG files
+    <FilesMatch "\.jpeg$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+
+    # Cache Control Headers for GIF files
+    <FilesMatch "\.gif$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+
+    # Cache Control Headers for WebP files
+    <FilesMatch "\.webp$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+
+    # Cache Control Headers for SVG files
+    <FilesMatch "\.svg$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+
+    # Cache Control Headers for ICO files
+    <FilesMatch "\.ico$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+
+    # Cache Control Headers for WOFF files
+    <FilesMatch "\.woff$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+
+    # Cache Control Headers for WOFF2 files
+    <FilesMatch "\.woff2$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+
+    # Cache Control Headers for TTF files
+    <FilesMatch "\.ttf$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+
+    # Cache Control Headers for EOT files
+    <FilesMatch "\.eot$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+
+    # Cache Control Headers for HTML files
+    <FilesMatch "\.html$">
         Header set Cache-Control "public, max-age=0, must-revalidate"
     </FilesMatch>
 
-    <FilesMatch "\.(pdf)$">
+    # Cache Control Headers for HTM files
+    <FilesMatch "\.htm$">
+        Header set Cache-Control "public, max-age=0, must-revalidate"
+    </FilesMatch>
+
+    # Cache Control Headers for PDF files
+    <FilesMatch "\.pdf$">
         Header set Cache-Control "public, max-age=2592000"
     </FilesMatch>
 </IfModule>
@@ -144,12 +215,44 @@
     # SVG
     AddType image/svg+xml .svg .svgz
     
+    # Compressed SVG - COMMENTED OUT TO AVOID POWERSHELL ISSUES
     # AddEncoding gzip .svgz
 </IfModule>
 
-# Cross-Origin Resource Sharing (CORS)
+# Cross-Origin Resource Sharing (CORS) - POWERSHELL SAFE
 <IfModule mod_headers.c>
-    <FilesMatch "\.(ttf|ttc|otf|eot|woff|woff2|font.css)$">
+    # TTF files
+    <FilesMatch "\.ttf$">
+        Header set Access-Control-Allow-Origin "*"
+    </FilesMatch>
+
+    # TTC files
+    <FilesMatch "\.ttc$">
+        Header set Access-Control-Allow-Origin "*"
+    </FilesMatch>
+
+    # OTF files
+    <FilesMatch "\.otf$">
+        Header set Access-Control-Allow-Origin "*"
+    </FilesMatch>
+
+    # EOT files
+    <FilesMatch "\.eot$">
+        Header set Access-Control-Allow-Origin "*"
+    </FilesMatch>
+
+    # WOFF files
+    <FilesMatch "\.woff$">
+        Header set Access-Control-Allow-Origin "*"
+    </FilesMatch>
+
+    # WOFF2 files
+    <FilesMatch "\.woff2$">
+        Header set Access-Control-Allow-Origin "*"
+    </FilesMatch>
+
+    # Font CSS files
+    <FilesMatch "\.font.css$">
         Header set Access-Control-Allow-Origin "*"
     </FilesMatch>
 </IfModule>
