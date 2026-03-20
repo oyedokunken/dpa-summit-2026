@@ -144,8 +144,7 @@
     # SVG
     AddType image/svg+xml .svg .svgz
     
-    # Compressed SVG
-    AddEncoding gzip .svgz
+    # AddEncoding gzip .svgz
 </IfModule>
 
 # Cross-Origin Resource Sharing (CORS)

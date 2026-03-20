@@ -257,11 +257,13 @@ DB_PASSWORD=secure_password
 MAIL_MAILER=smtp
 MAIL_HOST=smtp.gmail.com
 MAIL_PORT=587
-MAIL_USERNAME=noreply@dpa-summit.com
-MAIL_PASSWORD=app_password
+MAIL_USERNAME=your-email@gmail.com
+MAIL_PASSWORD=your-app-password
 MAIL_ENCRYPTION=tls
 MAIL_FROM_ADDRESS=noreply@dpa-summit.com
 MAIL_FROM_NAME="DPA Summit 2026"
+MAIL_ADMIN_ADDRESS=admin@dpa-summit.com
+MAIL_INQUIRIES_ADDRESS=partnerships@dpa-summit.com
 
 # AWS Configuration
 AWS_ACCESS_KEY_ID=your_access_key

@@ -108,6 +108,7 @@ The DPA Summit website is designed as a strategic intervention to drive procurem
 - **Email Templates:** Professional HTML email templates for registrations, confirmations, and notifications.
 - **Form Validation:** Comprehensive server-side validation with error handling.
 - **Admin Notifications:** Automatic email alerts for new registrations and inquiries.
+- **Email Configuration:** Full SMTP setup with Gmail integration and custom addresses.
 
 ### 4. Design & UX
 *   **Responsive Design:** Mobile-first architecture using Tailwind CSS.
@@ -211,12 +212,30 @@ npx tailwindcss init -p
     DB_PASSWORD=your_password
     ```
 
-4.  **Important:** Ensure your `php.ini` has `extension=pdo_mysql` uncommented.
+4.  **Configure Email Settings:**
+    ```env
+    MAIL_HOST=smtp.gmail.com
+    MAIL_PORT=587
+    MAIL_USERNAME=your-email@gmail.com
+    MAIL_PASSWORD=your-app-password
+    MAIL_ENCRYPTION=tls
+    MAIL_FROM_ADDRESS=noreply@dpa-summit.com
+    MAIL_FROM_NAME="DPA Summit 2026"
+    MAIL_ADMIN_ADDRESS=admin@dpa-summit.com
+    MAIL_INQUIRIES_ADDRESS=partnerships@dpa-summit.com
+    ```
+
+5.  **Important:** Ensure your `php.ini` has `extension=pdo_mysql` uncommented.
 
 ### 5. Database Setup
 
 1.  Create a database named `dpa_summit_db` in your MySQL tool (phpMyAdmin/Workbench).
-2.  Run the migrations:
+2.  **Import Database Schema:**
+    ```bash
+    # Import the complete schema with tables, views, and procedures
+    mysql -u root -p dpa_summit_db < database/schema.sql
+    ```
+3.  Run the migrations:
     ```bash
     php artisan migrate
     ```

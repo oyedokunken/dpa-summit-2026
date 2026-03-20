@@ -252,8 +252,8 @@ The DPA Summit 2026 Team
                 <h2>Contact Details:</h2>
                 <div class='field'><strong>Name:</strong> {$data['name']}</div>
                 <div class='field'><strong>Email:</strong> {$data['email']}</div>
-                <div class='field'><strong>Phone:</strong> {$data['phone'] ?? 'Not provided'}</div>
-                <div class='field'><strong>Company:</strong> {$data['company'] ?? 'Not provided'}</div>
+                <div class='field'><strong>Phone:</strong> " . ($data['phone'] ?? 'Not provided') . "</div>
+                <div class='field'><strong>Company:</strong> " . ($data['company'] ?? 'Not provided') . "</div>
                 <div class='field'><strong>Subject:</strong> {$data['subject']}</div>
                 <div class='field'><strong>Message:</strong><br>" . nl2br(htmlspecialchars($data['message'])) . "</div>
                 <div class='field'><strong>Submitted:</strong> " . date('Y-m-d H:i:s') . "</div>
