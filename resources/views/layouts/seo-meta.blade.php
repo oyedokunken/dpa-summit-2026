@@ -8,28 +8,12 @@
 <meta name="generator" content="Laravel 13.1">
 
 {{-- Page Specific Meta --}}
-@if(isset($title))
-    <title>{{ $title }} - Africa Digital Procurement Summit 2026</title>
-@else
-    <title>Africa Digital Procurement Summit 2026 | May 26, 2026, Lagos</title>
-@endif
-
-@if(isset($description))
-    <meta name="description" content="{{ $description }}">
-@else
-    <meta name="description" content="Join C-Suite executives at Africa Digital Procurement Summit 2026 in Lagos. Explore digital transformation in procurement, network with industry leaders, and discover innovative solutions.">
-@endif
-
-@if(isset($keywords))
-    <meta name="keywords" content="{{ $keywords }}">
-@else
-    <meta name="keywords" content="digital procurement, Africa, summit 2026, Lagos, procurement transformation, CPO, CFO, enterprise, ERP, Gloopro, supply chain, digitalization">
-@endif
+<title>@yield('title', 'Africa Digital Procurement Summit 2026 | Digital Transformation Event')</title>
+<meta name="description" content="@yield('description', 'Join Africa\'s premier digital procurement summit on May 26, 2026. Connect with 500+ CPOs, CFOs, and procurement leaders.')">
+<meta name="keywords" content="@yield('keywords', 'digital procurement, Africa, summit 2026, Lagos, procurement transformation, CPO, CFO, enterprise')">
 
 @if(isset($author))
     <meta name="author" content="{{ $author }}">
-@else
-    <meta name="author" content="Gloopro Procurement Systems">
 @endif
 
 {{-- Canonical URL --}}

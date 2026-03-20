@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title', 'Africa Digital Procurement Summit 2026 | Digital Transformation Event')
+@section('description', 'Join Africa\'s premier digital procurement summit on May 26, 2026. Connect with 500+ CPOs, CFOs, and procurement leaders. Learn digital governance, leakage audit, and automation strategies.')
+@section('keywords', 'digital procurement, Africa, summit 2026, Lagos, procurement transformation, CPO, CFO, enterprise, automation, leakage audit')
+
 @section('content')
 <!-- Hero Section -->
 <section class="bg-gradient-to-r from-green-600 to-red-600 text-white py-20">

@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title', 'Who Should Attend | Delegates | DPA Summit 2026')
+@section('description', 'Designed for CPOs, CFOs, and senior executives from large enterprises. Learn who should attend Africa Digital Procurement Summit 2026 and the benefits for procurement leaders.')
+@section('keywords', 'delegates, attendees, CPO, CFO, procurement executives, Africa, summit 2026, enterprise leaders, digital transformation')
+
 @section('content')
 <!-- Hero Section -->
 <section class="bg-gradient-to-r from-green-600 to-red-600 text-white py-16">
